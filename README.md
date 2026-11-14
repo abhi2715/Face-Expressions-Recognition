@@ -53,3 +53,10 @@ in `data/ferplus_raw/`. Checkpoints in `models/`: `emotion_resnet18.pt` (FER-201
 - Expression is not emotion: the model reads facial movement, not feelings. Treat output as a hint.
 - Fear and sadness are the weakest classes; fear is often confused with surprise.
 - FER-2013 faces are small grayscale web photos, so accuracy varies with lighting, angle, age, skin tone and glasses.
+
+## Research paper
+
+The write-up is in `research-paper/`: `MoodLens_Research_Paper.pdf` is the finished paper, and
+`research-paper/MoodLens_paper/` holds its LaTeX source (`tex/`), figures, measured results (`results/`) and the
+scripts that produced them (`scripts/`). The paper covers the expression model plus the two apps built on it; the apps
+are in separate repositories, so scripts `02` to `06` need them to run, while `01_eval_models.py` only needs this repo.

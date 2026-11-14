@@ -1,0 +1,10 @@
+{
+ "r18_epochs": 40,
+ "r18_best_val": 0.7015,
+ "r34_epochs": 35,
+ "r34_best_val": 0.6963,
+ "fp_epochs": 30,
+ "fp_best_val": 0.8651,
+ "r18_first_val": 0.4871,
+ "fp_first_val": 0.8201
+}

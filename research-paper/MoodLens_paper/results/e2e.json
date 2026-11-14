@@ -1,0 +1,170 @@
+[
+ {
+  "app": "Mood Menu",
+  "test": "page loads, 72-item menu fetched",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "app": "Mood Menu",
+  "test": "vibe scan reads a happy face",
+  "pass": true,
+  "detail": "{'m': 'happy', 'hero': 'Celebration Mode', 'status': 'Live', 'fps': '14 fps · 21.9 ms', 'before': 94}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "filters (veg, mild, no egg, <= 900) respected",
+  "pass": true,
+  "detail": "{'n': 3, 'bad': 0, 'total': 788, 'summary': 'Veg · Mild · ≤ ₹900 · no egg'}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "Shuffle gives a different combo",
+  "pass": true,
+  "detail": "29,6,53,41 -> 38,8,54,42"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "manual mood picker (angry -> Cool-Down Mode)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "app": "Mood Menu",
+  "test": "rescan with a sad face -> Comfort Mode",
+  "pass": true,
+  "detail": "Comfort Mode"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "Lock keeps picks while the face changes",
+  "pass": true,
+  "detail": "🔒 Locked"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "cart totals (5% GST) and bill split",
+  "pass": true,
+  "detail": "{'lines': 4, 'sub': '₹1,548', 'tax': '₹77', 'total': '₹1,625', 'each': '₹813 each'}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "order ticket with QR code",
+  "pass": true,
+  "detail": "{'shown': True, 'qr': True, 'text': 'SMASH GUYS\\nORDER #0002 · 2026-11-07 17:38\\nCOMFORT MODE\\n1 × G', 'after': True}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "after-meal Mood Lift rescan (sad -> happy)",
+  "pass": true,
+  "detail": "{'lift': 80, 'toast': 'Mood lift +80! The food worked 🎉', 'lb': 5}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "shareable mood receipt PNG downloads",
+  "pass": true,
+  "detail": "smash-guys-mood-receipt-2.png"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "table mode reads two faces and builds per-person picks",
+  "pass": true,
+  "detail": "{'people': ['sad', 'happy'], 'cards': 2, 'total': '₹2,478', 'shared': '🍽️ To share: 1× Gravy Fries (₹378) · 1× Apple Crumble Cake (₹370)', 'group': 'sad'}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "Smashy chatbot answers with add-to-order buttons",
+  "pass": true,
+  "detail": "{'reply': 'Veg combo under\\u202f₹700\\n\\nThe Classic Mac ＋ Add – ₹410\\nFresh Watermelon & Mint Juice ＋ Add – ₹230\\n\\nTotal: ₹640 (before 5% GST)\\n\\nA comforting mac\\u202f&\\u202fcheese paired with a refreshing juice—perfect for lifting', 'addBtns': 2}"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "chatbot dish button adds to the real cart",
+  "pass": true,
+  "detail": "0 -> 1"
+ },
+ {
+  "app": "Mood Menu",
+  "test": "no JavaScript errors",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "live read: happy face -> 'They're enjoying this'",
+  "pass": true,
+  "detail": "{'h': \"They're enjoying this\", 'who': 'Them · #1', 'status': 'Live', 'v': '94', 'top': ['happy']}"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "playbook lines change with the setting",
+  "pass": true,
+  "detail": "{'work': \"Great, sounds like we're aligned — shall we lock in next steps?\", 'sales': 'Sounds like this really fits — want to talk about getting started?', 'date': \"I'm really enjoying this conversation.\", 'support': \"Glad that worked for you! Anything else I can sort out while we're here?\", 'casual'"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "mood change updates the coaching (sad, then angry)",
+  "pass": true,
+  "detail": "('They seem down', 'Tension is rising')"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "live alerts fire (tension / dip)",
+  "pass": true,
+  "detail": "['00:17 🔥 Tension rising — Slow down, lower your voice and acknowledge their point before continuing.', \"00:12 ✨ Great rapport — They're enjoying this — a good moment for your key point or ask.\", '00:11 📉 Mood dipped — Their positivity just dropped. Pause and check in: “How does that sound to you?”'"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "transcript tags 'landed' and 'hit a nerve'",
+  "pass": true,
+  "detail": "['00:23 Guess what, I got us concert tickets ✨ landed +80', '00:28 but you have to pay for both ⚠ hit a nerve -88']"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "micro-expression (0.4 s flash) caught",
+  "pass": true,
+  "detail": "1 caught"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "room mode: two active faces, flags who needs attention",
+  "pass": true,
+  "detail": "{'shown': True, 'cards': 2, 'away': 1, 'tip': \"👉 #3 looks down. Bring them in: “What's your take on this?”\"}"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "AI wingman returns a read and three replies",
+  "pass": true,
+  "detail": "{'read': 'They’re mixing excitement with a bit of teasing, and seem to be playfully testing you', 'n': 3, 'watch': '✕ Avoid: Don’t sound resentful about the cost'}"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "Coach chatbot sees the live mood and answers",
+  "pass": true,
+  "detail": "{'ctx': '☕ Casual · 😠 They look angry · 6/100 · 2 transcript lines', 'reply': 'They’re feeling angry and a bit defensive.\\n\\nPause, take a slow breath, and keep your voice calm and steady.\\n“I’m sorry my comment came across the wrong way—let’'}"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "video-call (screen share) source runs",
+  "pass": true,
+  "detail": "Live"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "debrief report built",
+  "pass": true,
+  "detail": "{'title': '😊 Mostly happy · 01:10', 'stats': 'DURATION 01:10 AVG POSITIVITY 48 PEAK 95 @ 00:43 MOOD CHANGE -36 MICRO-EXPRESSIONS 1 LINES THAT LANDED 1', 'tips': 3, 'landed': '00:23“Guess what, I got us concert tickets”\\n+80'}"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "debrief downloads as a standalone HTML report",
+  "pass": true,
+  "detail": "conversation-debrief-2026-11-07-12-10.html"
+ },
+ {
+  "app": "Conversation Coach",
+  "test": "no JavaScript errors",
+  "pass": true,
+  "detail": "[]"
+ }
+]
